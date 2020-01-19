@@ -80,7 +80,7 @@ Once you have Heroku Exec installed, you can connect to the console using
 ```
 $ heroku ps:exec
 Establishing credentials... done
-Connecting to web.1 on ⬢ lovely-minecraft-2351...
+Connecting to web.1 on ⬢ pacific-mountain-39954...
 $ screen -r minecraft
 ```
 
@@ -104,7 +104,7 @@ $ heroku config:set NGROK_OPTS="--remote-addr 1.tcp.ngrok.io:25565"
 You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
 
 ```
-$ heroku config:set MINECRAFT_VERSION="1.8.3"
+$ heroku config:set MINECRAFT_VERSION="1.15.1"
 ```
 
 You can also configure the server properties by creating a `server.properties`
@@ -115,3 +115,5 @@ described on the [Minecraft Wiki](http://minecraft.gamepedia.com/Server.properti
 You can add files such as `banned-players.json`, `banned-ips.json`, `ops.json`,
 `whitelist.json` to your Git repository and the Minecraft server will pick them up.
 You can also add plugins. First, make a directory called plugins. Make sure you check if the plugin is compatible with your minecraft  version, and copy them into the plugins folder.
+
+**NOTE** This version of the original minecraft-buildpack is currently running server version: 1.15.1
